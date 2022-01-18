@@ -1,0 +1,29 @@
+{
+	"name": "cc-chart-taketwo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "test",
+		"build": "rimraf ./build && tsc",
+		"start": "npm run build && node build/index.js",
+		"start:dev": "nodemon"
+	},
+	"author": "x-1337-x",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/node": "^17.0.9",
+		"nodemon": "^2.0.15",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.4"
+	},
+	"dependencies": {
+		"fastify": "^3.25.3",
+		"fastify-blipp": "^3.1.0",
+		"fastify-plugin": "^3.0.0",
+		"pg": "^8.7.1",
+		"reflect-metadata": "^0.1.13",
+		"typeorm": "^0.2.41"
+	}
+}
